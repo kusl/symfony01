@@ -34,4 +34,3 @@ test:php7:pgsql:
   image: php:7.1
   script:
   - vendor/bin/phpunit --configuration phpunit_pgsql.xml --coverage-text
-  allow_failure: true
