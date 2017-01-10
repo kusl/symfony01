@@ -17,6 +17,8 @@ before_script:
 # Install all project dependencies
 - php composer.phar install
 - php composer.phar update
+# Install dependencies
+- bash ci/docker_install.sh > /dev/null
 
 services:
 - postgres
