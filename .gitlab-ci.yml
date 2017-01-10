@@ -21,7 +21,7 @@ before_script:
 - php composer.phar install
 
 services:
-- mysql
+- postgres
 
 variables:
   # Configure pgsql service (https://hub.docker.com/r/_/postgres/)
