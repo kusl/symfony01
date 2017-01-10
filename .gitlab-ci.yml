@@ -30,10 +30,10 @@ variables:
 # We test PHP7 (the default) with pgSQL
 test:pgsql:
   script:
-  - vendor/bin/phpunit --configuration phpunit_pgsql.xml --coverage-text
+  - vendor/bin/phpunit --bootstrap app/autoload.php tests
 
 # We test PHP7 with pgSQL, but we allow it to fail
 test:php7:pgsql:
   image: php:7.1
   script:
-  - vendor/bin/phpunit --configuration phpunit_pgsql.xml --coverage-text
+  - vendor/bin/phpunit --bootstrap app/autoload.php tests
